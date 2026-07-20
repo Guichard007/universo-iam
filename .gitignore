@@ -34,3 +34,23 @@ Thumbs.db
 # Temporary
 tmp/
 temp/
+
+# Secrets and scripts with tokens
+refresh_token.txt
+*.ps1
+publicar-blogger.ps1
+publicar-body.ps1
+publicar-faltantes.ps1
+publicar-simples.ps1
+listar-posts.ps1
+acessar-blog.ps1
+renovar-token.ps1
+verificar-token.ps1
+obter-token.ps1
+passo1-servidor.ps1
+reautorizar.ps1
+teste-post.ps1
+teste-api.ps1
+atualizar-template-direto.cjs
+atualizar-template-v2.cjs
+atualizar-template.cjs
