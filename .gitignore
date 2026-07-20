@@ -38,6 +38,8 @@ temp/
 # Secrets and scripts with tokens
 refresh_token.txt
 *.ps1
+atualizar-posts-url.cjs
+preparar-thumbnails.cjs
 publicar-blogger.ps1
 publicar-body.ps1
 publicar-faltantes.ps1
