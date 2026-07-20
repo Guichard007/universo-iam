@@ -1,0 +1,218 @@
+<!-- UNIVERSO IAM - Template Atualizado com Thumbnails -->
+<!-- Copie e cole este codigo no Template HTML do Blogger -->
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link expr:href='data:blog.homepageUrl + "favicon.ico"' rel='icon' type='image/x-icon'/>
+<title><data:blog.pageTitle/></title>
+<b:skin><![CDATA[
+/*
+<Group description="Cores" selector="body">
+<Variable name="body.background.color" description="Fundo" type="color" default="#0d1117"/>
+<Variable name="content.background.color" description="Fundo dos cards" type="color" default="#161b22"/>
+<Variable name="text.color" description="Texto" type="color" default="#e6edf3"/>
+<Variable name="muted.color" description="Texto secundario" type="color" default="#8b949e"/>
+<Variable name="accent.color" description="Destaque" type="color" default="#22d3ee"/>
+<Variable name="border.color" description="Bordas" type="color" default="#30363d"/>
+</Group>
+*/
+* { box-sizing: border-box; }
+body {
+margin: 0;
+background: #0d1117;
+color: #e6edf3;
+font: normal 400 16px 'Inter', system-ui, sans-serif;
+line-height: 1.65;
+-webkit-font-smoothing: antialiased;
+}
+a { color: #22d3ee; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+h1,h2,h3,h4 { font-family: 'Inter', system-ui, sans-serif; color: #e6edf3; line-height: 1.25; }
+.ti-wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+.ti-main-grid { display: grid; grid-template-columns: 1fr 320px; gap: 40px; padding: 40px 0; align-items: start; }
+@media (max-width: 900px) { .ti-main-grid { grid-template-columns: 1fr; } }
+/* Header */
+.ti-header { background: #0b2038; border-bottom: 2px solid #22d3ee; position: sticky; top: 0; z-index: 50; }
+.ti-header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 20px; flex-wrap: wrap; }
+.ti-brand-title { margin: 0; font-size: 22px; font-weight: 800; letter-spacing: -0.02em; display: flex; align-items: center; }
+.ti-brand-title a { color: #e6edf3; display: inline-flex; align-items: center; gap: 12px; }
+.ti-logo { height: 60px; width: auto; display: inline-block; border-radius: 6px; }
+.ti-tagline { margin: 6px 0 0; font-size: 13px; font-weight: 400; color: #8b949e; letter-spacing: 0; text-transform: none; }
+.header .description, .Header .description, .descriptionwrapper, .header-widget .description, #header .description, .header-inner .description, .titlewrapper + .descriptionwrapper { display: none !important; }
+/* Menu botoes */
+.ti-nav ul { list-style: none; display: flex; gap: 10px; margin: 0; padding: 0; flex-wrap: wrap; }
+.ti-nav li { margin: 0; }
+.ti-nav a { color: #e6edf3; font-size: 14px; font-weight: 500; padding: 8px 16px; border: 1px solid #30363d; border-radius: 8px; background: #0d1117; transition: all .15s ease; }
+.ti-nav a:hover { color: #0d1117; background: #22d3ee; border-color: #22d3ee; text-decoration: none; }
+/* Posts em card */
+.blog-posts { margin: 0; }
+.ti-post {
+background: #161b22;
+border: 1px solid #30363d;
+border-radius: 14px;
+padding: 26px 28px;
+margin-bottom: 24px;
+}
+.ti-post-flex { display: flex; gap: 18px; align-items: flex-start; }
+@media (max-width: 560px) { .ti-post-flex { flex-direction: column; } }
+.ti-post-thumb-sm { width: 150px; height: 100px; object-fit: cover; border-radius: 8px; flex-shrink: 0; border: 1px solid #30363d; }
+.ti-post-label {
+display: inline-block; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px;
+color: #22d3ee; background: rgba(34,211,238,0.12); padding: 2px 9px; border-radius: 6px; margin-bottom: 8px;
+}
+.ti-post-label:hover { text-decoration: none; }
+.ti-post-title { margin: 4px 0 8px; font-size: 25px; font-weight: 800; letter-spacing: -0.02em; }
+.ti-post-title a { color: #e6edf3; }
+.ti-post-title a:hover { color: #22d3ee; text-decoration: none; }
+.ti-post-meta { color: #8b949e; font-size: 13px; margin-bottom: 14px; }
+.ti-post-body { color: #e6edf3; }
+.ti-post-body pre { background: #010409; color: #e6edf3; padding: 16px; border-radius: 10px; overflow: auto; font-size: 14px; font-family: 'JetBrains Mono', Consolas, monospace; border: 1px solid #30363d; }
+.ti-post-body code { font-family: 'JetBrains Mono', Consolas, monospace; }
+.ti-readmore { display: inline-block; margin-top: 12px; font-weight: 600; font-size: 14px; color: #22d3ee; }
+.ti-pager { display: flex; justify-content: space-between; padding: 10px 0 30px; }
+.ti-pager a { display: inline-block; padding: 9px 18px; border: 1px solid #30363d; border-radius: 8px; font-weight: 600; font-size: 14px; background: #161b22; color: #22d3ee; }
+/* Sidebar / widgets */
+.sidebar .widget { background: #161b22; border: 1px solid #30363d; border-radius: 14px; padding: 20px 22px; margin-bottom: 22px; }
+.sidebar .widget h2, .ti-widget-title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: #8b949e; margin: 0 0 14px; padding-bottom: 10px; border-bottom: 1px solid #30363d; font-weight: 700; }
+.sidebar .widget ul { list-style: none; margin: 0; padding: 0; }
+.sidebar .widget li { padding: 7px 0; border-bottom: 1px solid #30363d; font-size: 15px; }
+.sidebar .widget li:last-child { border-bottom: 0; }
+.sidebar .widget a { color: #22d3ee; }
+/* Labels como chips */
+.sidebar .Label ul { display: flex; flex-wrap: wrap; gap: 8px; }
+.sidebar .Label li { border: 0; padding: 0; }
+.sidebar .Label li a { display: inline-block; font-size: 13px; font-weight: 500; color: #8b949e; background: #0d1117; border: 1px solid #30363d; padding: 5px 11px; border-radius: 999px; }
+.sidebar .Label li a:hover { color: #0d1117; background: #22d3ee; border-color: #22d3ee; text-decoration: none; }
+/* PopularPosts */
+.sidebar .PopularPosts img { display: none; }
+/* Footer */
+.ti-footer { background: #010409; color: #8b949e; margin-top: 40px; border-top: 1px solid #30363d; }
+.ti-footer .ti-wrap { padding: 28px 20px; text-align: center; font-size: 13px; }
+.ti-footer a { color: #22d3ee; }
+.ti-footer .widget { background: transparent; border: 0; padding: 0; }
+]]></b:skin>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap' rel='stylesheet'/>
+</head>
+<body>
+<header class='ti-header'>
+<div class='ti-wrap ti-header-inner'>
+<div class='header section' id='header'><div class='widget Header' data-version='2' id='Header1'>
+<h1 class='ti-brand-title'>
+<a expr:href='data:blog.homepageUrl'>
+<img alt='logo' class='ti-logo' src='https://blogger.googleusercontent.com/img/a/AVvXsEinBV2pfE_PuSEZcDGKv_u-WMDJX40jP11W6_b__z33fKwhhdHGsBRFDCb5IFZsgWxREDHFcIoY93AtYmUTmjuW6XATsJZ4OU-D6zcBfiXtc3UPLZGoZkyC_CJK4AaKtAcsmui_Ry5vImU-3QPmr1RIilkmNOESbmiiQfRVlZnywn0IOvDo6CPkWkF4L18p=s480'/>
+<span class='ti-brand-name'>Identity and Access Management (IAM)</span>
+</a>
+</h1>
+<p class='ti-tagline'>Gestão de Identidades e Segurança da Informação na prática.</p>
+</div></div>
+<nav class='ti-nav'>
+<div class='navbar section' id='navbar'><div class='widget LinkList' data-version='2' id='LinkList1'>
+<ul>
+<li><a href='/'>Home</a></li>
+<li><a href='/search/label/IAM'>IAM</a></li>
+<li><a href='/search/label/Governanca'>Governanca</a></li>
+<li><a href='/search/label/Automacao'>Automacao</a></li>
+<li><a href='/search/label/Carreira'>Carreira</a></li>
+</ul>
+</div></div>
+</nav>
+</div>
+</header>
+<div class='ti-wrap'>
+<div class='ti-main-grid'>
+<main class='ti-content'>
+<div class='main section' id='main'><div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts'>
+<b:loop values='data:posts' var='post'>
+<article class='ti-post'>
+<b:if cond='data:post.labels'>
+<b:loop values='data:post.labels' var='label'>
+<a class='ti-post-label' expr:href='data:label.url'><data:label.name/></a>
+</b:loop>
+</b:if>
+<h3 class='ti-post-title'>
+<a expr:href='data:post.url'><data:post.title/></a>
+</h3>
+<div class='ti-post-meta'><data:post.dateHeader/></div>
+<div class='ti-post-flex'>
+<b:if cond='data:post.thumbnailUrl'>
+<img class='ti-post-thumb-sm' expr:alt='data:post.title' expr:src='data:post.thumbnailUrl'/>
+</b:if>
+<div class='ti-post-body'>
+<data:post.snippet/>
+<a class='ti-readmore' expr:href='data:post.url'>Ler mais &#8594;</a>
+</div>
+</div>
+</article>
+</b:loop>
+</div>
+<b:include name='nextprev'/>
+</div></div>
+</main>
+<aside class='sidebar'>
+<div class='sidebar-right section' id='sidebar-right'>
+<div class='widget PopularPosts' data-version='1' id='PopularPosts1'>
+<h2>Mais lidos</h2>
+<div class='widget-content'>
+<ul>
+<b:loop values='data:posts' var='post'>
+<li><a expr:href='data:post.url'><data:post.title/></a></li>
+</b:loop>
+</ul>
+</div>
+</div>
+<div class='widget Profile' data-version='1' id='Profile1'>
+<h2>Sobre</h2>
+<div class='widget-content'>
+<a expr:href='data:profileUrl'><img alt='Minha foto' class='profile-img' height='80' src='//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrMcvcQ_ONlvTrAnFxnbwvXJC57wAnVvD87b3TsBHgFEccr-DnB47rheJN85K3-QXv9E0bqgqKePiv6pt04aY1U7gNlU2GfjIv8s9DLjxJOh7kxHwVdSA7AYiSE0FMdz7IoEMyRdR6vo1krBg-Oa121WVKDfKkwSmdXNhrW5MsaLxJyVA/s1600/logo-opcao2-escudo.png' width='80'/></a>
+<dl class='profile-datablock'>
+<dt class='profile-data'>
+<a class='profile-name-link g-profile' expr:href='data:profileUrl' rel='author'>
+<data:displayname/>
+</a>
+</dt>
+</dl>
+<a class='profile-link' expr:href='data:profileUrl' rel='author'>Ver meu perfil completo</a>
+<div class='clear'></div>
+</div>
+</div>
+<div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>Arquivo</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='flat'>
+<li class='archivedate'>
+<a expr:href='data:post.url'><data:post.dateHeader/></a>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<footer class='ti-footer'>
+<div class='ti-wrap'>
+<div class='footer section' id='footer'><div class='widget Attribution' data-version='2' id='Attribution1'>
+<div class='widget-content'>
+<div class='blogger'>
+<a href='https://www.blogger.com' rel='nofollow'>
+Tecnologia do Blogger
+</a>
+</div>
+</div>
+</div></div>
+</div>
+</footer>
+</body>
+</html>

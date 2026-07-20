@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link expr:href='data:blog.homepageUrl + "favicon.ico"' rel='icon' type='image/x-icon'/>
+<title><data:blog.pageTitle/></title>
+<b:include data='blog' name='all-head-content'/>
+<b:skin><![CDATA[
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#e6edf3;font:16px/1.6 'Inter',system-ui,sans-serif}
+a{color:#22d3ee;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+h1,h2,h3{color:#e6edf3;font-weight:800;line-height:1.3}
+
+.ti-header{background:#0b2038;border-bottom:2px solid #22d3ee;position:sticky;top:0;z-index:50;padding:12px 0}
+.ti-header .ti-wrap{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 20px}
+.ti-brand{display:flex;align-items:center;gap:12px}
+.ti-logo{height:50px;border-radius:6px}
+.ti-brand-name{font-size:20px;font-weight:800;color:#e6edf3}
+.ti-social{display:flex;gap:10px}
+.ti-social a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:#161b22;border:1px solid #30363d;color:#8b949e;transition:all .15s ease}
+.ti-social a:hover{background:#22d3ee;border-color:#22d3ee;color:#0d1117}
+.ti-social svg{width:18px;height:18px;fill:currentColor}
+
+.ti-search{display:flex;align-items:center;background:#161b22;border:1px solid #30363d;border-radius:8px;padding:0 12px;height:36px;gap:8px}
+.ti-search input{background:none;border:none;color:#e6edf3;font-size:14px;width:180px;outline:none}
+.ti-search input::placeholder{color:#8b949e}
+.ti-search-icon{color:#8b949e;flex-shrink:0}
+.ti-search-icon svg{width:16px;height:16px;fill:currentColor}
+
+.ti-main{max-width:1200px;margin:0 auto;padding:30px 20px}
+.ti-grid{display:grid;grid-template-columns:1fr 300px;gap:30px}
+@media(max-width:900px){.ti-grid{grid-template-columns:1fr}}
+
+.ti-post{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px;margin-bottom:20px}
+.ti-post-title{font-size:22px;margin-bottom:10px}
+.ti-post-title a{color:#e6edf3}
+.ti-post-title a:hover{color:#22d3ee}
+.ti-post-meta{color:#8b949e;font-size:13px;margin-bottom:12px}
+.ti-post-flex{display:flex;gap:16px;align-items:flex-start}
+@media(max-width:560px){.ti-post-flex{flex-direction:column}}
+.ti-post-thumb{width:140px;height:90px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.ti-post-snippet{color:#b1b8c0;font-size:14px}
+.ti-readmore{display:inline-block;margin-top:8px;font-weight:600;font-size:14px;color:#22d3ee}
+.ti-post-label{display:inline-block;font-size:11px;color:#22d3ee;background:rgba(34,211,238,0.1);padding:2px 8px;border-radius:4px;margin-bottom:6px}
+
+.ti-pager{display:flex;justify-content:space-between;padding:20px 0}
+.ti-pager a{padding:10px 20px;border:1px solid #30363d;border-radius:8px;font-weight:600;background:#161b22;color:#22d3ee}
+
+.sidebar .widget{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px;margin-bottom:20px}
+.sidebar .widget h2{font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#8b949e;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #30363d}
+.sidebar .widget ul{list-style:none}
+.sidebar .widget li{padding:8px 0;border-bottom:1px solid #30363d}
+.sidebar .widget li:last-child{border:none}
+.sidebar .widget a{color:#22d3ee;font-size:14px}
+
+.ti-footer{background:#010409;text-align:center;padding:24px;margin-top:40px;border-top:1px solid #30363d;color:#8b949e;font-size:13px}
+.ti-footer a{color:#22d3ee}
+
+.header .description,.Header .description,.descriptionwrapper{display:none!important}
+]]></b:skin>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap' rel='stylesheet'/>
+</head>
+<body>
+
+<b:section class='header' id='header' maxwidgets='1'>
+<b:widget id='Header1' locked='true' title='Header' type='Header' version='2'>
+<b:includable id='main'>
+<header class='ti-header'>
+<div class='ti-wrap'>
+<div class='ti-brand'>
+<a expr:href='data:blog.homepageUrl'>
+<img alt='UNIVERSO IAM' class='ti-logo' src='https://blogger.googleusercontent.com/img/a/AVvXsEinBV2pfE_PuSEZcDGKv_u-WMDJX40jP11W6_b__z33fKwhhdHGsBRFDCb5IFZsgWxREDHFcIoY93AtYmUTmjuW6XATsJZ4OU-D6zcBfiXtc3UPLZGoZkyC_CJK4AaKtAcsmui_Ry5vImU-3QPmr1RIilkmNOESbmiiQfRVlZnywn0IOvDo6CPkWkF4L18p=s480'/>
+<span class='ti-brand-name'><data:title/></span>
+</a>
+</div>
+<div style='display:flex;align-items:center;gap:12px'>
+<form class='ti-search' expr:action='data:blog.searchUrl' method='get'>
+<input name='q' placeholder='Buscar artigos...' type='text'/>
+<button class='ti-search-icon' type='submit'>
+<svg viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/></svg>
+</button>
+</form>
+<div class='ti-social'>
+<a href='https://www.linkedin.com/in/guilherme-richard-0945471a4/' target='_blank' rel='noopener' title='LinkedIn'>
+<svg viewBox='0 0 24 24'><path d='M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z'/></svg>
+</a>
+<a href='https://www.instagram.com/reviewtheaccess/' target='_blank' rel='noopener' title='Instagram'>
+<svg viewBox='0 0 24 24'><path d='M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5M12 7a5 5 0 110 10 5 5 0 010-10m0 2a3 3 0 100 6 3 3 0 000-6z'/></svg>
+</a>
+</div>
+</div>
+</div>
+</header>
+</b:includable>
+</b:widget>
+</b:section>
+
+<div class='ti-main'>
+<div class='ti-grid'>
+<main>
+<b:section class='main' id='main' showaddelement='yes'>
+<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2'>
+<b:includable id='main'>
+<b:loop values='data:posts' var='post'>
+<article class='ti-post'>
+<b:if cond='data:post.labels'>
+<b:loop values='data:post.labels' var='label'>
+<a class='ti-post-label' expr:href='data:label.url'><data:label.name/></a>
+</b:loop>
+</b:if>
+<h3 class='ti-post-title'>
+<a expr:href='data:post.url'><data:post.title/></a>
+</h3>
+<div class='ti-post-meta'><data:post.dateHeader/></div>
+<div class='ti-post-flex'>
+<b:if cond='data:post.thumbnailUrl'>
+<img class='ti-post-thumb' expr:alt='data:post.title' expr:src='data:post.thumbnailUrl'/>
+</b:if>
+<div class='ti-post-snippet'>
+<data:post.snippet/>
+<a class='ti-readmore' expr:href='data:post.url'>Ler mais &#8594;</a>
+</div>
+</div>
+</article>
+</b:loop>
+<div class='ti-pager'>
+<b:if cond='data:newerPageUrl'>
+<a expr:href='data:newerPageUrl'>&#171; Recentes</a>
+</b:if>
+<b:if cond='data:olderPageUrl'>
+<a expr:href='data:olderPageUrl'>Antigos &#187;</a>
+</b:if>
+</div>
+</b:includable>
+</b:widget>
+</b:section>
+</main>
+
+<aside class='sidebar'>
+<b:section class='sidebar-right' id='sidebar-right' showaddelement='yes'>
+<b:widget id='PopularPosts1' locked='false' title='Mais lidos' type='PopularPosts' version='2'>
+<b:includable id='main'>
+<div class='widget'>
+<h2>Mais lidos</h2>
+<ul>
+<b:loop values='data:posts' var='post'>
+<li><a expr:href='data:post.url'><data:post.title/></a></li>
+</b:loop>
+</ul>
+</div>
+</b:includable>
+</b:widget>
+<b:widget id='Profile1' locked='false' title='Sobre' type='Profile' version='2'>
+<b:includable id='main'>
+<div class='widget'>
+<h2>Sobre</h2>
+<a expr:href='data:userUrl'><img alt='Perfil' class='profile-img' height='80' src='//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrMcvcQ_ONlvTrAnFxnbwvXJC57wAnVvD87b3TsBHgFEccr-DnB47rheJN85K3-QXv9E0bqgqKePiv6pt04aY1U7gNlU2GfjIv8s9DLjxJOh7kxHwVdSA7AYiSE0FMdz7IoEMyRdR6vo1krBg-Oa121WVKDfKkwSmdXNhrW5MsaLxJyVA/s1600/logo-opcao2-escudo.png' width='80'/></a>
+<p style='margin-top:10px;color:#e6edf3'>Universo IAM</p>
+</div>
+</b:includable>
+</b:widget>
+</b:section>
+</aside>
+</div>
+</div>
+
+<footer class='ti-footer'>
+<div class='ti-wrap'>
+<a href='https://www.blogger.com' rel='nofollow'>Tecnologia do Blogger</a>
+</div>
+</footer>
+
+</body>
+</html>

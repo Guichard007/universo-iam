@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imagens UNIVERSO IAM</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0d1117; padding: 40px; font-family: 'Inter', system-ui, sans-serif; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; }
+.card {
+width: 1200px;
+height: 630px;
+background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0b2038 100%);
+border: 2px solid #30363d;
+border-radius: 16px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 60px;
+position: relative;
+overflow: hidden;
+}
+.card::before {
+content: '';
+position: absolute;
+top: -50%;
+left: -50%;
+width: 200%;
+height: 200%;
+background: radial-gradient(circle at 30% 70%, rgba(34,211,238,0.08) 0%, transparent 50%);
+}
+.card::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 4px;
+background: linear-gradient(90deg, #22d3ee, #00BFFF, #22d3ee);
+}
+.icon {
+font-size: 72px;
+margin-bottom: 30px;
+position: relative;
+z-index: 1;
+filter: drop-shadow(0 0 20px rgba(34,211,238,0.3));
+}
+.title {
+font-size: 42px;
+font-weight: 800;
+color: #e6edf3;
+line-height: 1.2;
+margin-bottom: 20px;
+position: relative;
+z-index: 1;
+max-width: 900px;
+letter-spacing: -0.02em;
+}
+.subtitle {
+font-size: 20px;
+color: #8b949e;
+position: relative;
+z-index: 1;
+margin-bottom: 30px;
+}
+.label {
+display: inline-block;
+font-family: 'JetBrains Mono', Consolas, monospace;
+font-size: 14px;
+color: #22d3ee;
+background: rgba(34,211,238,0.12);
+padding: 8px 20px;
+border-radius: 8px;
+border: 1px solid rgba(34,211,238,0.3);
+position: relative;
+z-index: 1;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+.brand {
+position: absolute;
+bottom: 30px;
+right: 40px;
+font-size: 16px;
+font-weight: 700;
+color: #30363d;
+letter-spacing: 0.05em;
+z-index: 1;
+}
+.corner {
+position: absolute;
+width: 120px;
+height: 120px;
+border: 2px solid rgba(34,211,238,0.2);
+border-radius: 50%;
+}
+.corner-tl { top: -30px; left: -30px; }
+.corner-br { bottom: -30px; right: -30px; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="grid">
+
+<div class="card" id="img1">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">🔐</div>
+<div class="title">O que e IAM?</div>
+<div class="subtitle">Guia Completo sobre Identity and Access Management</div>
+<div class="label">IAM</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img2">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">🛡️</div>
+<div class="title">O que e PAM?</div>
+<div class="subtitle">Privileged Access Management Explicado</div>
+<div class="label">PAM</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img3">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">📋</div>
+<div class="title">O que e IGA?</div>
+<div class="subtitle">Identity Governance and Administration</div>
+<div class="label">IGA</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img4">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">🔒</div>
+<div class="title">Guia de Cyberseguranca</div>
+<div class="subtitle">Protegendo Ativos Digitais</div>
+<div class="label">SEGURANCA</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img5">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">☁️</div>
+<div class="title">Seguranca em Nuvem</div>
+<div class="subtitle">Guia Completo para IAM na Cloud</div>
+<div class="label">CLOUD</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img6">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">🚀</div>
+<div class="title">Carreira em TI</div>
+<div class="subtitle">Como Construir sua Carreira em Seguranca</div>
+<div class="label">CARREIRA</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img7">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">🎓</div>
+<div class="title">Certificacoes IAM</div>
+<div class="subtitle">As Mais Valorizadas no Mercado</div>
+<div class="label">CERTIFICACOES</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img8">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">⚙️</div>
+<div class="title">SailPoint</div>
+<div class="subtitle">Guia Completo de Governanca em Nuvem</div>
+<div class="label">GOVERNANCA</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img9">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">🌐</div>
+<div class="title">Microsoft Entra ID</div>
+<div class="subtitle">Guia Completo do Azure AD</div>
+<div class="label">AZURE</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img10">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">🔑</div>
+<div class="title">Okta</div>
+<div class="subtitle">Gerenciamento de Identidades na Nuvem</div>
+<div class="label">OKTA</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+<div class="card" id="img11">
+<div class="corner corner-tl"></div>
+<div class="corner corner-br"></div>
+<div class="icon">🖥️</div>
+<div class="title">Active Directory</div>
+<div class="subtitle">Guia Completo do AD</div>
+<div class="label">AD</div>
+<div class="brand">UNIVERSO IAM</div>
+</div>
+
+</div>
+</body>
+</html>
