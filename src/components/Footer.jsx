@@ -12,18 +12,21 @@ const quickLinks = [
 ]
 
 const resources = [
-  { name: 'Sobre Nós', path: '/sobre' },
+  { name: 'Sobre Nos', path: '/sobre' },
   { name: 'Loja Digital', path: '/loja' },
   { name: 'YouTube', path: '/youtube' },
   { name: 'Redes Sociais', path: '/redes-sociais' },
+  { name: 'Blog', path: '/blog', external: false },
 ]
 
 // ============================================================
-// CONFIGURACAO: Preencha com os links das suas redes sociais
-// Deixe vazio '' para nao exibir
+// CONFIGURACAO: Links das redes sociais
 // ============================================================
+const BLOG_URL = 'https://universoiam.blogspot.com/'
+const INSTAGRAM_URL = 'https://instagram.com/reviewtheaccess'
+
 const socials = [
-  { icon: FiInstagram, href: '', label: 'Instagram' },
+  { icon: FiInstagram, href: INSTAGRAM_URL, label: 'Instagram' },
   { icon: FaFacebook, href: '', label: 'Facebook' },
   { icon: FaTiktok, href: '', label: 'TikTok' },
   { icon: FiLinkedin, href: '', label: 'LinkedIn' },

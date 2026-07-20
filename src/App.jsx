@@ -18,7 +18,7 @@ import ScrollToTop from './components/ScrollToTop'
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/universo-iam">
         <ScrollToTop />
         <Helmet>
           <title>Universo IAM - Segurança da Informação e Tecnologia</title>
