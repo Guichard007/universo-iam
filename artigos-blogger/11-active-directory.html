@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head><body>
+
+<h1>Active Directory: Guia Completo de Seguranca e Gerenciamento</h1>
+
+<p><em>Publicado por Universo IAM | Julho 2026</em></p>
+
+<p><strong>Labels:</strong> Active Directory, Seguranca, Microsoft</p>
+
+<hr/>
+
+<h2>Introducao</h2>
+
+<p>O <strong>Active Directory (AD)</strong> ainda e a espinha dorsal da maioria das organizacoes. Apesar da migracao para o Entra ID, o AD continua sendo critico para operacoes de TI.</p>
+
+<p>Neste artigo, vamos explorar como proteger e gerenciar seu ambiente AD.</p>
+
+<h2>O que e Active Directory?</h2>
+
+<p>Active Directory e um servico de diretorio da Microsoft que armazena informacoes sobre objetos na rede e facilita o gerenciamento de seguranca e o acesso a esses recursos.</p>
+
+<h2>Componentes Principais</h2>
+
+<ul>
+<li><strong>Domain Controller:</strong> Servidor que autentica e autoriza usuarios</li>
+<li><strong>Organizational Units (OUs):</strong> Containers para organizar objetos</li>
+<li><strong>Group Policy Objects (GPOs):</strong> Politicas centralizadas</li>
+<li><strong>DNS:</strong> Resolucao de nomes</li>
+<li><strong>Sites and Services:</strong> Replicacao entre DCs</li>
+</ul>
+
+<h2>Ameacas Comuns ao AD</h2>
+
+<ul>
+<li><strong>Golden Ticket:</strong> Falsificacao de TGT</li>
+<li><strong>Silver Ticket:</strong> Falsificacao de TGS</li>
+<li><strong>DCSync:</strong> Replicacao ilegitima</li>
+<li><strong>Kerberoasting:</strong> Ataque a servicos Kerberos</li>
+<li><strong>Pass-the-Hash:</strong> Uso indevido de hashes</li>
+<li><strong>AD Reconnaissance:</strong> Coleta de informacoes</li>
+</ul>
+
+<h2>Hardening do AD</h2>
+
+<h3>1. Protecao de Contas</h3>
+<ul>
+<li>Use senhas fortes e unicas</li>
+<li>Implemente MFA para admins</li>
+<li>Use Protected Users group</li>
+<li>Desative contas nao usadas</li>
+</ul>
+
+<h3>2. Configuracao Segura</h3>
+<ul>
+<li>Minimize administradores de dominio</li>
+<li>Implemente tier model</li>
+<li>Configure LAPS</li>
+<li>Desative LLMNR e NetBIOS</li>
+</ul>
+
+<h3>3. Monitoramento</h3>
+<ul>
+<li>Ative Advanced Audit Policy</li>
+<li>Monitore eventos de seguranca</li>
+<li>Use SIEM para correlacao</li>
+<li>Implemente honeypots</li>
+</ul>
+
+<h3>4. Patch Management</h3>
+<ul>
+<li>Mantenha DCs atualizados</li>
+<li>Applique patches de seguranca</li>
+<li>Teste antes de aplicar em producao</li>
+</ul>
+
+<h2>Ferramentas de Auditoria AD</h2>
+
+<ul>
+<li><strong>Microsoft AD Audit:</strong> Ferramentas nativas</li>
+<li><strong>Varonis:</strong> Monitoramento avancado</li>
+<li><strong>Stealthbits:</strong> Protecao de dados</li>
+<li><strong>SolarWinds:</strong> Gerenciamento</li>
+</ul>
+
+<h2>Migracao para Entra ID</h2>
+
+<p>A migracao do AD para o Entra ID e um processo gradual:</p>
+
+<ol>
+<li>Sincronizacao com Azure AD Connect</li>
+<li>Implemente Conditional Access</li>
+<li>Migre aplicativos para SSO</li>
+<li>Implemente Passwordless</li>
+<li>Reduza dependencia do AD on-premises</li>
+</ol>
+
+<h2>Conclusao</h2>
+
+<p>Active Directory continua relevante e precisa ser bem gerenciado e protegido. Profissionais com conhecimento em AD e Entra ID sao muito valorizados.</p>
+
+<p>Leia mais em nosso <a href="https://universoiam.blogspot.com/">blog</a> e siga nosso <a href="https://instagram.com/reviewtheaccess">Instagram</a>.</p>
+
+</body></html>

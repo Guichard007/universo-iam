@@ -2,20 +2,20 @@ import { motion } from 'framer-motion'
 import { FiExternalLink, FiBookOpen, FiArrowRight } from 'react-icons/fi'
 import Card from '../components/Card'
 
-const BLOG_URL = 'https://universoiam.blogspot.com/'
+const BLOG_URL = 'https://universoiam.blogspot.com'
 
 const categories = [
-  { name: 'IAM', desc: 'Identity and Access Management', color: 'from-blue-500 to-cyan-500' },
-  { name: 'PAM', desc: 'Privileged Access Management', color: 'from-purple-500 to-pink-500' },
-  { name: 'IGA', desc: 'Identity Governance', color: 'from-green-500 to-teal-500' },
-  { name: 'Cybersecurity', desc: 'Seguranca Cibernetica', color: 'from-red-500 to-orange-500' },
-  { name: 'Cloud Security', desc: 'Seguranca em Nuvem', color: 'from-yellow-500 to-orange-500' },
-  { name: 'Carreira em TI', desc: 'Desenvolvimento Profissional', color: 'from-indigo-500 to-purple-500' },
-  { name: 'Certificacoes', desc: 'Preparacao para Certificacoes', color: 'from-pink-500 to-rose-500' },
-  { name: 'SailPoint', desc: 'Plataforma de Governanca', color: 'from-cyan-500 to-blue-500' },
-  { name: 'Microsoft Entra ID', desc: 'Identidade Microsoft', color: 'from-blue-600 to-blue-400' },
-  { name: 'Okta', desc: 'Plataforma de Identidade', color: 'from-blue-500 to-indigo-500' },
-  { name: 'Active Directory', desc: 'Diretorio Ativo', color: 'from-gray-500 to-blue-500' },
+  { name: 'IAM', desc: 'Identity and Access Management', color: 'from-blue-500 to-cyan-500', label: 'IAM' },
+  { name: 'PAM', desc: 'Privileged Access Management', color: 'from-purple-500 to-pink-500', label: 'PAM' },
+  { name: 'IGA', desc: 'Identity Governance', color: 'from-green-500 to-teal-500', label: 'IGA' },
+  { name: 'Cybersecurity', desc: 'Seguranca Cibernetica', color: 'from-red-500 to-orange-500', label: 'Cybersecurity' },
+  { name: 'Cloud Security', desc: 'Seguranca em Nuvem', color: 'from-yellow-500 to-orange-500', label: 'Cloud+Security' },
+  { name: 'Carreira em TI', desc: 'Desenvolvimento Profissional', color: 'from-indigo-500 to-purple-500', label: 'Carreira+em+TI' },
+  { name: 'Certificacoes', desc: 'Preparacao para Certificacoes', color: 'from-pink-500 to-rose-500', label: 'Certificacoes' },
+  { name: 'SailPoint', desc: 'Plataforma de Governanca', color: 'from-cyan-500 to-blue-500', label: 'SailPoint' },
+  { name: 'Microsoft Entra ID', desc: 'Identidade Microsoft', color: 'from-blue-600 to-blue-400', label: 'Microsoft+Entra+ID' },
+  { name: 'Okta', desc: 'Plataforma de Identidade', color: 'from-blue-500 to-indigo-500', label: 'Okta' },
+  { name: 'Active Directory', desc: 'Diretorio Ativo', color: 'from-gray-500 to-blue-500', label: 'Active+Directory' },
 ]
 
 export default function Blog() {
@@ -45,7 +45,7 @@ export default function Blog() {
           <h2 className="font-montserrat font-bold text-2xl text-white text-center mb-10">Categorias de Conteudo</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categories.map((cat, i) => (
-              <a key={i} href={BLOG_URL} target="_blank" rel="noopener noreferrer">
+              <a key={i} href={`${BLOG_URL}/search/label/${cat.label}`} target="_blank" rel="noopener noreferrer">
                 <Card delay={i * 0.05} className="group cursor-pointer">
                   <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${cat.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                     <FiBookOpen className="h-6 w-6 text-white" />
