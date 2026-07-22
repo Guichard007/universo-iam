@@ -9,16 +9,18 @@ const filters = {
   level: ['Todos', 'Iniciante', 'Intermediario', 'Avancado'],
 }
 
+const HOTMART_AFFILIATE_LINK = 'https://go.hotmart.com/T106836940H'
+
 const allCourses = [
-  { title: 'Fundamentos de IAM', desc: 'Aprenda os conceitos basicos de Identity and Access Management.', level: 'Iniciante', type: 'Gratuitos', duration: '8h', modules: 12, students: 1250, rating: 4.9, image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
-  { title: 'Microsoft Entra ID Completo', desc: 'Domine o Microsoft Entra ID do basico ao avancado.', level: 'Intermediario', type: 'Pagos', duration: '15h', modules: 20, students: 2100, rating: 4.9, image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
-  { title: 'SailPoint IdentityNow', desc: 'Curso completo de governanca de identidades com SailPoint.', level: 'Intermediario', type: 'Pagos', duration: '12h', modules: 16, students: 890, rating: 4.8, image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
-  { title: 'PAM na Pratica', desc: 'Implemente Gerenciamento de Acessos Privilegiados na sua empresa.', level: 'Avancado', type: 'Pagos', duration: '10h', modules: 14, students: 650, rating: 4.7, image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
-  { title: 'Introducao a Cybersecurity', desc: 'Os fundamentos da Seguranca Cibernetica para iniciantes.', level: 'Iniciante', type: 'Gratuitos', duration: '6h', modules: 10, students: 3200, rating: 4.8, image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
-  { title: 'Azure Security Avancado', desc: 'Seguranca avancada em ambientes Microsoft Azure.', level: 'Avancado', type: 'Pagos', duration: '14h', modules: 18, students: 780, rating: 4.9, image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
-  { title: 'Okta Identity Platform', desc: 'Aprenda a gerenciar identidades com Okta.', level: 'Intermediario', type: 'Pagos', duration: '11h', modules: 15, students: 560, rating: 4.7, image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
-  { title: 'Active Directory Seguranca', desc: 'Hardening e seguranca de ambientes Active Directory.', level: 'Avancado', type: 'Pagos', duration: '9h', modules: 12, students: 420, rating: 4.8, image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
-  { title: 'Carreira em TI', desc: 'Dicas e estrategias para construir uma carreira de sucesso em tecnologia.', level: 'Iniciante', type: 'Gratuitos', duration: '4h', modules: 8, students: 5400, rating: 4.9, image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=250&fit=crop', instructor: 'Universo IAM' },
+  { title: 'Fundamentos de IAM', desc: 'Aprenda os conceitos basicos de Identity and Access Management.', level: 'Iniciante', type: 'Gratuitos', duration: '8h', modules: 12, students: 1250, rating: 4.9, image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: '' },
+  { title: 'Microsoft Entra ID Completo', desc: 'Domine o Microsoft Entra ID do basico ao avancado.', level: 'Intermediario', type: 'Pagos', duration: '15h', modules: 20, students: 2100, rating: 4.9, image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: HOTMART_AFFILIATE_LINK },
+  { title: 'SailPoint IdentityNow', desc: 'Curso completo de governanca de identidades com SailPoint.', level: 'Intermediario', type: 'Pagos', duration: '12h', modules: 16, students: 890, rating: 4.8, image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: HOTMART_AFFILIATE_LINK },
+  { title: 'PAM na Pratica', desc: 'Implemente Gerenciamento de Acessos Privilegiados na sua empresa.', level: 'Avancado', type: 'Pagos', duration: '10h', modules: 14, students: 650, rating: 4.7, image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: HOTMART_AFFILIATE_LINK },
+  { title: 'Introducao a Cybersecurity', desc: 'Os fundamentos da Seguranca Cibernetica para iniciantes.', level: 'Iniciante', type: 'Gratuitos', duration: '6h', modules: 10, students: 3200, rating: 4.8, image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: '' },
+  { title: 'Azure Security Avancado', desc: 'Seguranca avancada em ambientes Microsoft Azure.', level: 'Avancado', type: 'Pagos', duration: '14h', modules: 18, students: 780, rating: 4.9, image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: HOTMART_AFFILIATE_LINK },
+  { title: 'Okta Identity Platform', desc: 'Aprenda a gerenciar identidades com Okta.', level: 'Intermediario', type: 'Pagos', duration: '11h', modules: 15, students: 560, rating: 4.7, image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: HOTMART_AFFILIATE_LINK },
+  { title: 'Active Directory Seguranca', desc: 'Hardening e seguranca de ambientes Active Directory.', level: 'Avancado', type: 'Pagos', duration: '9h', modules: 12, students: 420, rating: 4.8, image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: HOTMART_AFFILIATE_LINK },
+  { title: 'Carreira em TI', desc: 'Dicas e estrategias para construir uma carreira de sucesso em tecnologia.', level: 'Iniciante', type: 'Gratuitos', duration: '4h', modules: 8, students: 5400, rating: 4.9, image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=250&fit=crop', instructor: 'Universo IAM', link: '' },
 ]
 
 export default function Cursos() {
@@ -107,9 +109,15 @@ export default function Cursos() {
                   </div>
                   <span className="text-iam-gray text-xs">por {course.instructor}</span>
                 </div>
-                <button className="w-full py-3 bg-iam-blue text-white rounded-xl font-semibold hover:shadow-neon transition-all">
-                  {course.type === 'Gratuitos' ? 'Comecar Agora' : 'Saiba Mais'}
-                </button>
+                {course.link ? (
+                  <a href={course.link} target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-iam-blue text-white rounded-xl font-semibold hover:shadow-neon transition-all text-center block">
+                    {course.type === 'Gratuitos' ? 'Comecar Agora' : 'Saiba Mais'}
+                  </a>
+                ) : (
+                  <button className="w-full py-3 bg-iam-blue text-white rounded-xl font-semibold hover:shadow-neon transition-all">
+                    {course.type === 'Gratuitos' ? 'Comecar Agora' : 'Saiba Mais'}
+                  </button>
+                )}
               </Card>
             ))}
           </div>

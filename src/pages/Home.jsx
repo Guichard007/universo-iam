@@ -30,10 +30,12 @@ const recentArticles = [
   { title: 'Azure Security Best Practices', category: 'Cloud Security', date: '08 Jul 2026', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop' },
 ]
 
+const HOTMART_AFFILIATE_LINK = 'https://go.hotmart.com/T106836940H'
+
 const popularCourses = [
-  { title: 'Fundamentos de IAM', level: 'Iniciante', duration: '8h', rating: 4.9, students: 1250, image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=250&fit=crop' },
-  { title: 'SailPoint IdentityNow', level: 'Intermediario', duration: '12h', rating: 4.8, students: 890, image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop' },
-  { title: 'Azure AD Avancado', level: 'Avancado', duration: '15h', rating: 4.9, students: 2100, image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop' },
+  { title: 'Fundamentos de IAM', level: 'Iniciante', duration: '8h', rating: 4.9, students: 1250, image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=250&fit=crop', link: '' },
+  { title: 'SailPoint IdentityNow', level: 'Intermediario', duration: '12h', rating: 4.8, students: 890, image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop', link: HOTMART_AFFILIATE_LINK },
+  { title: 'Azure AD Avancado', level: 'Avancado', duration: '15h', rating: 4.9, students: 2100, image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop', link: HOTMART_AFFILIATE_LINK },
 ]
 
 const featuredEbooks = [
@@ -218,7 +220,11 @@ export default function Home() {
                   </div>
                 </div>
                 <Link to="/cursos" className="mt-4 block text-center py-2 bg-iam-blue/10 text-iam-blue rounded-lg font-semibold hover:bg-iam-blue/20 transition-all">
-                  Saiba Mais
+                  {course.link ? (
+                    <a href={course.link} target="_blank" rel="noopener noreferrer" className="block py-2">
+                      Saiba Mais
+                    </a>
+                  ) : 'Saiba Mais'}
                 </Link>
               </Card>
             ))}
